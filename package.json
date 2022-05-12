@@ -1,10 +1,15 @@
 {
   "name": "build-status",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/main.mjs",
   "repository": "git@github.com:sunday-hadrien-menspellen/build-status.git",
   "author": "H <hadrien.menspellen@sundayapp.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node src/main.mjs",
+    "re:build": "rescript",
+    "re:start": "rescript build -w"
+  },
   "devDependencies": {
     "rescript": "^9.1.4"
   }
